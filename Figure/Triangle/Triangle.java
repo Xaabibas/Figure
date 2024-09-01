@@ -6,9 +6,17 @@ public class Triangle {
     double c;
 
     public Triangle(double a, double b, double c){
-        this.a = a;
-        this.b = b;
-        this.c = c;
+        try {
+            if (a + b  <= c || a + c <= b || b + c <= a){
+                throw new Exception("Такого трегольника не существует");
+            }
+            this.a = a;
+            this.b = b;
+            this.c = c;
+        }
+        catch (Exception ex){
+            System.out.println(ex.getMessage());
+        }
     }
 
     public double getA() {
