@@ -20,6 +20,7 @@ public class IsoscelesTriangle extends Triangle{
 
     @Override
     public double square() {
-        return 0;
+        double h = Math.sqrt(this.getB()*this.getB() - this.getA()*this.getA()/4);
+        return h * this.getA() / 2;
     }
 }
