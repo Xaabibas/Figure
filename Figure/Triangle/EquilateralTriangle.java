@@ -3,9 +3,7 @@ package Figure.Triangle;
 public class EquilateralTriangle extends Triangle{
 
     public EquilateralTriangle(double side){
-        this.setA(side);
-        this.setB(side);
-        this.setC(side);
+        super(side, side, side);
     }
 
     @Override
