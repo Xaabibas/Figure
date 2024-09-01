@@ -52,5 +52,15 @@ public class Triangle {
         return this.getA() + this.getB() + this.getC();
     }
 
+    public double radiusOfTheInscribedCircle(){
+        double p = this.perimeter() / 2;
+        return this.square() / p;
+    }
+
+    public double radiusOfTheCircumscribedCircle(){
+        return a * b * c / 4 / this.square();
+    }
+
+
 }
 
